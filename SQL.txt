@@ -21,3 +21,7 @@ CREATE TABLE cars (
     mileage INT NOT NULL,
     initialMilleage INT NOT NULL
 );
+INSERT INTO car_brands (title);
+INSERT INTO car_models (carBrandId, title);
+INSERT INTO users (firstName, lastName, email, password);
+INSERT INTO cars (userId, carBrandId, carModelId, mileage, initialMilleage);
