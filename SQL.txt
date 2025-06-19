@@ -21,7 +21,24 @@ CREATE TABLE cars (
     mileage INT NOT NULL,
     initialMilleage INT NOT NULL
 );
-INSERT INTO car_brands (title);
-INSERT INTO car_models (carBrandId, title);
-INSERT INTO users (firstName, lastName, email, password);
-INSERT INTO cars (userId, carBrandId, carModelId, mileage, initialMilleage);
+INSERT INTO car_brands (title) VALUES
+('BMW'),
+('Audi'),
+('Honda');
+
+INSERT INTO car_models (carBrandId, title) VALUES
+(1, 'X5'),
+(1, 'X6'),
+(2, 'A6'),
+(2, 'Q7'),
+(3, 'Accord'),
+(3, 'Civic');
+
+INSERT INTO users (firstName, lastName, email, password) VALUES
+('Дмитро', 'Яровенко', 'ivadmytron@example.com', 'password17'),
+('Ірина', 'Соловій', 'iryna@example.com', 'password22');
+
+INSERT INTO cars (userId, carBrandId, carModelId, mileage, initialMilleage) VALUES
+(1, 1, 'X5', 150000, 50000),
+(2, 2, 'A6', 80000, 20000),
+(3, 3, 'Civic', 120000, 30000);
